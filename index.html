@@ -23,7 +23,7 @@
                        <h3> Myanmar,Yangon </h3>
                        <h1 ng-repeat="day in currweth" >{{ day.temp }}</h1><h1>&deg;C</h1>
                        <h3 ng-repeat="day in currweth.weather" style="text-transform: capitalize;"> {{ day.description }} </h3>
-                       <h1 ng-repeat="day in clouds.all" style="text-transform: capitalize;"> {{ clouds.all }} </h1>
+                       <h1 ng-repeat="day in currweth.weather" style="text-transform: capitalize;"> {{ clouds.all }} </h1>
 
                         <div class="button-wrapper">
                             <div class="layer"></div>
