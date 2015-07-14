@@ -8,7 +8,7 @@ var $mainButton = $(".md-button.md-fab"),
 
 //should move this outta here
 app.factory('forecast', ['$http', function($http) {
-    return $http.get('http://api.openweathermap.org/data/2.5/weather?q=myanmar,yangon,uae&units=metric')
+    return $http.get('http://api.openweathermap.org/data/2.5/weather?q=myanmar,yangon,mm&units=metric')
         .success(function(data) {
             return data;
         })
